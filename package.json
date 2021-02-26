@@ -1,0 +1,19 @@
+{
+  "name": "employee_directory",
+  "version": "1.0.0",
+  "description": "A simple React App to let you view your entire employee directory at once so that you have quick access to their information.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlheliMi/Employee_Directory.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlheliMi/Employee_Directory/issues"
+  },
+  "homepage": "https://github.com/AlheliMi/Employee_Directory#readme"
+}
