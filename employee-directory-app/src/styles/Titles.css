@@ -1,0 +1,27 @@
+.image, .name, .phone, .email, .dob {
+    text-align: center;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+.emailButton{
+    margin-left: 60px;
+}
+
+button{
+    margin-left: 20px;
+    padding: 0.25em 0.75em;
+    min-width: 10ch;
+    min-height: 44px;
+}
+button::before {
+  
+    display: inline-block;
+    margin-left: 1em;
+}
+
+button::after {
+    content: '☝️';
+    display: inline-block;
+    margin-left: 1em;
+}

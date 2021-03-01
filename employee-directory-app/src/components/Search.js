@@ -8,7 +8,7 @@ import Titles from "./Titles";
 class Search extends Component {
     state = {
         users: [{}],
-        order: "descend",
+        order: "descending",
         filterdUsers: [{}],
         loading: true,
         search: "",
@@ -18,6 +18,7 @@ class Search extends Component {
 
     handleInputChange = event => {
         let { users, search } = this.state;
+        /* console.log(this.state); */
         let searchEmployee = users.filter(sorted => {
             return (
                sorted.name.first.toLowerCase().includes(search.toLowerCase()) ||
@@ -28,26 +29,25 @@ class Search extends Component {
 
             )
         })
-            // console.log(event.target.value)
+            /* console.log(event.target.value) */
             this.setState({ sorted: true })
             this.setState({ search: event.target.value });
             this.setState({ filterdUsers: searchEmployee });
-            // console.log(this.state.filterdUsers)
     };
 
 
     handleSort = () => {
-        if (this.state.order === "descend") {
-            this.setState({ order: "asc"})
+        if (this.state.order === "descending") {
+            this.setState({ order: "ascending"})
         } else {
-            this.setState({ order: "descend"})
+            this.setState({ order: "descending"})
         }
 
         
         let { users, order } = this.state;
 
         function compare( a, b ) {
-            if (order === "asc") {
+            if (order === "ascending") {
                 if ( a.name.first < b.name.first )
                 {    return -1;  
               }  

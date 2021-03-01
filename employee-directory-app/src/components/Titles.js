@@ -1,24 +1,29 @@
 import React from "react";
-/* import "../styles/Titles.css" */
+import "../styles/Titles.css"
 
 function Titles(props) {
     return (
         <div className="container">
         <div className="row">
             <div className="col-2 image">
-                Image
+                Employee Photo
             </div>
-            <div className="col-2 name" onClick={props.click}>
-                Name
+            <div className="col-2 align-middle" >
+                <button type="button" className="name nameButton btn-secondary btn-sm" onClick={props.click}>
+                    Name 👇
+                </button> 
             </div>
             <div className="col-3 phone">
-                Phone
+                Phone Number
             </div>
-            <div className="col-3 email" onClick={props.click}>
-                Email
+            <div className="col-3 align-middle">
+                <button type="button" className="email emailButton btn-secondary btn-sm" onClick={props.click}>
+                    Email 👇
+                </button>
+                
             </div>
             <div className="col-2 dob">
-                Date of Birth
+                Date Of Birth
             </div>
         </div>
     </div>
