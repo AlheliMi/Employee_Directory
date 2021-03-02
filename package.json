@@ -2,6 +2,7 @@
   "name": "employee_directory",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://alhelimi.github.io/Employee_Directory",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
@@ -45,8 +46,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-
- "homepage": "https://github.com/AlheliMi/Employee_Directory"
-
+  }
 }
